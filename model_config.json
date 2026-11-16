@@ -1,0 +1,30 @@
+{
+  "threshold": 0.99,
+  "cost_fn": 10,
+  "cost_fp": 2,
+  "features": [
+    "shift",
+    "operating_hours",
+    "load_pct",
+    "vibration_mm_s",
+    "temperature_c",
+    "rpm",
+    "lubrication_hours_since_service",
+    "noise_db",
+    "current_amp",
+    "ambient_temp_c",
+    "operating_hours_rollmean3",
+    "load_pct_rollmean3",
+    "vibration_mm_s_rollmean3",
+    "temperature_c_rollmean3",
+    "rpm_rollmean3",
+    "lubrication_hours_since_service_rollmean3",
+    "noise_db_rollmean3",
+    "current_amp_rollmean3",
+    "ambient_temp_c_rollmean3"
+  ],
+  "target": "failure_next_24h",
+  "group": "asset_id",
+  "alarm_medium_fraction": 0.6,
+  "ordering_proxy": "operating_hours"
+}
